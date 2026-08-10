@@ -7,9 +7,8 @@ from django.shortcuts import render, HttpResponseRedirect
 def saludo(request):
     return HttpResponse('Hola Mundo')
 
-def index(request):
+def Home(request):
     return render(request, 'app_hospital/index.html')
-
 def pacientes(request):
     return render(request, 'app_hospital/pacientes.html')
 def medicos(request):
