@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacientes</title>
+</head>
+<body>
+    <h1>Lista de Pacientes</h1>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+            <th>Estado</th>
+        </tr>
+    {% for paciente in pacientes %}
+        <tr>
+            <td>{{ paciente.nombre }}</td>
+            <td>{{ paciente.apellido }}</td>
+            <td>{{ paciente.dni }}</td>
+            <td>{{ paciente.estado }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+    <a href="/">Volver al inicio</a>
+</body>
+</html>

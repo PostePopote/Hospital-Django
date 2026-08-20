@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tratamientos</title>
+</head>
+<body>
+    <h1>Lista de Tratamientos</h1>
+
+    <table border="1">
+        <tr>
+            <th>Paciente</th>
+            <th>Descripcion</th>
+            <th>Medico</th>
+            <th>Fecha Inicio</th>
+        </tr>
+        {% for tratamiento in tratamientos %}
+        <tr>
+            <td>{{ tratamiento.paciente }}</td>
+            <td>{{ tratamiento.descripcion }}</td>
+            <td>{{ tratamiento.medico }}</td>
+            <td>{{ tratamiento.fecha_inicio }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/">Volver al inicio</a>
+</body>
+</html>
